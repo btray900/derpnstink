@@ -82,14 +82,16 @@ SSH to the vm as stinky with the compromised key, find flag 3 in dir listings.
 
 ## pcap
 
-File mentions pcap, founf password in the pcap for POST methods. 
+File mentions pcap, found password in the pcap for POST methods. 
 
 ![Alt text](./pcap.png?raw=true)
+
+![Alt text](./mrderp.png?raw=true)
 
 
 ## sudo
 
-mrderp user needs a key but su as stinky works fine, sudo shows ALL level for files
+mrderp user needs a key for SSH but su as stinky works fine, sudo shows ALL level for files
 
 ![Alt text](./sudo.png?raw=true)
 
@@ -118,4 +120,4 @@ cat root flag for victory
 
 ## thanks
 
-
+Thanks out to securekomodo for the hot VM.
