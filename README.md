@@ -12,6 +12,8 @@ The goal is to find 4 flags and get some root.
 
 Flag 1 is found looking at the source code and scrolling all the way to the bottom of the page. Also a src to a text file that mentions the hosts file. I'm not sure if it made a difference, I changed it after finding the note. It does mention a username for 'stinky'.
 
+![Alt text](./hosts.png?raw=true)
+
 ![Alt text](./flag1.png?raw=true)
 
 
@@ -32,6 +34,8 @@ admin/admin works to login but not much available.
 ## wpscan
 
 wpscan identifies a vulnerable plugin which is listed in Metasploit for shell and a couple of users.
+
+![Alt text](./wp_plugin.png?raw=true)
 
 ![Alt text](./wp_users.png?raw=true)
 
@@ -62,7 +66,7 @@ Logging in to wordpress as unclestinky shows flag 2 post
 
 SSH requires a key, but FTP as stinky with wedgie57 allows to drilldown to files/ssh/ssh/ssh,etc to get the key for stinky SSH
 
-![Alt text](./key.png?raw=true)
+![Alt text](./ftp.png?raw=true)
 
 
 
@@ -70,7 +74,7 @@ SSH requires a key, but FTP as stinky with wedgie57 allows to drilldown to files
 
 SSH to the vm as stinky with the compromised key, find flag 3 in dir listings.
 
-![Alt text](./stiunkyshell.png?raw=true)
+![Alt text](./stinkyshell.png?raw=true)
 
 
 ![Alt text](./flag3.png?raw=true)
@@ -78,14 +82,14 @@ SSH to the vm as stinky with the compromised key, find flag 3 in dir listings.
 
 ## pcap
 
-File mentions pcap, fing another password in the pcap. mrderp user needs a key but su as stinky works fine.
+File mentions pcap, founf password in the pcap for POST methods. 
 
 ![Alt text](./pcap.png?raw=true)
 
 
 ## sudo
 
-sudo shows ALL level for files
+mrderp user needs a key but su as stinky works fine, sudo shows ALL level for files
 
 ![Alt text](./sudo.png?raw=true)
 
