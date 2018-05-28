@@ -58,9 +58,20 @@ Logging in to wordpress as unclestinky shows flag 2 post
 ![Alt text](./flag2.png?raw=true)
 
 
+## find key
+
+SSH requires a key, but FTP as stinky with wedgie57 allows to drilldown to files/ssh/ssh/ssh,etc to get the key for stinky SSH
+
+![Alt text](./key.png?raw=true)
+
+
+
 ## flag3, user shell
 
-SSH to the vm as stinky with wedgie57 password
+SSH to the vm as stinky with the compromised key, find flag 3 in dir listings.
+
+![Alt text](./stiunkyshell.png?raw=true)
+
 
 ![Alt text](./flag3.png?raw=true)
 
@@ -81,11 +92,25 @@ sudo shows ALL level for files
 
 ## root
 
+<pre>
+\(*_*)
+  ( (>
+  /  \
+  </pre>
+
+![Alt text](./suid.png?raw=true)
+
 create file, run as root
+
+![Alt text](./root.png?raw=true)
+
 
 ## flag4
 
 cat root flag for victory
+
+![Alt text](./flag4.png?raw=true)
+
 
 ## thanks
 
