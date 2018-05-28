@@ -33,15 +33,23 @@ admin/admin works to login but not much available.
 
 wpscan identifies a vulnerable plugin which is listed in Metasploit for shell and a couple of users.
 
-![Alt text](./wpscan.png?raw=true)
+![Alt text](./wp_users.png?raw=true)
 
 
 ## low shell
 
+Run the exploit
+
+![Alt text](./lowshell.png?raw=true)
+
+
 
 ## mysql
 
-crack hashes. wedgie57 for unclestinky
+The wp_config.php contains the DB creds. Pull the hashes fro wp_users and crack hashes. unclestinky:wedgie57
+
+![Alt text](./hashcat.png?raw=true)
+
 
 ## flag2
 
@@ -54,13 +62,22 @@ Logging in to wordpress as unclestinky shows flag 2 post
 
 SSH to the vm as stinky with wedgie57 password
 
+![Alt text](./flag3.png?raw=true)
+
+
 ## pcap
 
 File mentions pcap, fing another password in the pcap. mrderp user needs a key but su as stinky works fine.
 
+![Alt text](./pcap.png?raw=true)
+
+
 ## sudo
 
 sudo shows ALL level for files
+
+![Alt text](./sudo.png?raw=true)
+
 
 ## root
 
