@@ -50,7 +50,7 @@ Run the exploit
 
 ## mysql
 
-The wp_config.php contains the DB creds. Pull the hashes fro wp_users and crack hashes. unclestinky:wedgie57
+The wp_config.php contains the DB creds. Pull the hashes from wp_users and crack hashes. unclestinky:wedgie57
 
 ![Alt text](./hashcat.png?raw=true)
 
@@ -91,7 +91,7 @@ File mentions pcap, found password in the pcap for POST methods.
 
 ## sudo
 
-mrderp user needs a key for SSH but su as stinky works fine, sudo shows ALL level for files
+mrderp user needs a key for SSH but su as stinky works fine, sudo shows ALL users for files
 
 ![Alt text](./sudo.png?raw=true)
 
@@ -106,7 +106,7 @@ mrderp user needs a key for SSH but su as stinky works fine, sudo shows ALL leve
 
 ![Alt text](./suid.png?raw=true)
 
-create file, run as root
+Create executablefile, run as root for root
 
 ![Alt text](./root.png?raw=true)
 
@@ -120,4 +120,4 @@ cat root flag for victory
 
 ## thanks
 
-Thanks out to securekomodo for the hot VM.
+Thanks out to securekomodo for the sweet VM.
